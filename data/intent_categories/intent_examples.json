@@ -1,0 +1,27 @@
+{
+  "contract_terms": [
+    "What are the terms of the contract?",
+    "Explain the contract duration.",
+    "What obligations do the parties have?"
+  ],
+  "privacy_policy": [
+    "What data is collected?",
+    "How is user information protected?",
+    "Explain the privacy practices."
+  ],
+  "dispute_resolution": [
+    "How are disputes handled?",
+    "What is the arbitration process?",
+    "Explain the mediation procedure."
+  ],
+  "termination_clause": [
+    "Under what conditions can the contract be terminated?",
+    "Explain the termination policy.",
+    "How do I end the agreement?"
+  ],
+  "payment_terms": [
+    "What are the payment terms?",
+    "When is payment due?",
+    "Explain the invoicing process."
+  ]
+}

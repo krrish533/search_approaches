@@ -1,0 +1,8 @@
+PyPDF2
+sentence-transformers
+keybert
+openai
+transformers
+torch
+python-dotenv
+pinecone
