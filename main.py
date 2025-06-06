@@ -1,5 +1,5 @@
-from scripts.ingestion.metadata_extraction import MetadataExtractionPipeline
-from scripts.ingestion.embed_to_pinecone import PineconeUploader
+from scripts.injestion.metadata_extraction import MetadataExtractionPipeline
+from scripts.injestion.embed_to_pinecone import PineconeUploader
 from scripts.search.search import DenseRetriever
 
 def main():

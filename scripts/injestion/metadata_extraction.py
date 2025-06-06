@@ -96,6 +96,38 @@ class MetadataExtractionPipeline:
 
     def embed_text(self, text):
         return self.embedding_model.encode(text).tolist()
+    
+    def process_single_document(self, filename: str):
+        pdf_path = self.pdf_input_dir / filename
+        if not pdf_path.exists():
+            print(f"❌ File {filename} not found in {self.pdf_input_dir}")
+            return None
+
+        text = self.extract_text_from_pdf(pdf_path)
+        if not text:
+            print(f"⚠️ {filename} is empty or unreadable.")
+            return None
+
+        cleaned_text = text.strip()
+        intent, confidence = self.predict_intent(cleaned_text)
+        result = {
+            "filename": f"{Path(filename).stem}.txt",
+            #"context": cleaned_text,
+            "keywords": self.extract_keywords(cleaned_text),
+            "intent_category": intent,
+            #"intent_confidence": confidence,
+            "named_entities": self.extract_entities(cleaned_text),
+            "summary": self.summarize(cleaned_text),
+            "embedding": self.embed_text(cleaned_text)
+        }
+
+        # Save JSON metadata for the document
+        output_path = self.final_output_dir / f"{Path(filename).stem}.json"
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2)
+        print(f"✅ Saved metadata: {output_path.name}")
+
+        return result
 
     def run_pipeline(self):
         for pdf_file in self.pdf_input_dir.glob("*.pdf"):
