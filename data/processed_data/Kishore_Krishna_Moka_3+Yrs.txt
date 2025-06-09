@@ -1,0 +1,145 @@
+Kishore
+:www.linkedin.com/in/kishore-krishna -
+Professional Summary: 
+ Accomplished Data Scientist with over
+advanced machine learning , specializing in extracting actionable insights from complex datasets across 
+Insurance , Consulting , and E-commerce 
+ Developed and deployed supervised
+Clustering ) using Python, Scikit-Learn
+to improve model accuracy and business KPIs
+ Developed and fine-tuned Large Language Models
+(RLHF). 
+ Built and deployed predictive models in recommendation systems, utilizing 
+XGBoost to enhance accuracy in insurance premium calculators. Additionally, implemented 
+Augmented Generation  (RAG) systems for LLM 
+generation . 
+ Collaborative problem solver, Proactive
+through data-driven solutions, leveraging
+project turnaround time .
+ Proactively tackled c omplex business challenges with analytical thinking, leveraging data
+develop innovative solutions that enhance efficiency and performance.
+ 
+Work Experience: 
+Company: Devzen Software Solutions Pvt,  
+Role: Associate Data Scientist  
+Roles & Responsibilities: 
+ Designed and deployed a RAG- based AI Knowledge Assistant, integrating OpenAI GPT
+for document- based semantic search 
+ Developed a personalized recommendation engine using historical purchases, repeated offers (similarity score), 
+and profiling-based micro- segmentation
+ Built champion XGBoost model with custom features and bundled offers using affinity 
+entropy. 
+ Engineered rolling, demographic, and dynamic segments using PCA and K
+targeting. 
+ Engineered rolling, demographic, and dynamic segments using PCA and K
+targeting. 
+ Led end-to- end ML lifecycle implementation in an Agile team, collaborating with cross
+participating in sprint planning, demos, and retrospectives. 
+ Mentored junior data professionals, contributing to internal knowledge
+Kishore Krishna Moka 
+Associate Data Scientist 
+-moka ✉:kishoremoka97@gmail.com
+✆: +91
+over 3+ years of experience, proficient in Python and
+, specializing in extracting actionable insights from complex datasets across 
+commerce domains.
+supervised  and unsupervised  machine learning models ( Regression
+Learn, and XGBoost, effectively handling both structured and unstructured data 
+business KPIs . 
+Large Language Models  (LLMs) using Reinforcement Learning from Human Feedback 
+Built and deployed predictive models in recommendation systems, utilizing RFM, PCA
+to enhance accuracy in insurance premium calculators. Additionally, implemented 
+(RAG) systems for LLM fine-tuning , optimizing  contextual
+Proactive  learner, collaborating with cross-functional teams
+leveraging  Python and SQL for data analysis, resulting in
+omplex business challenges with analytical thinking, leveraging data
+develop innovative solutions that enhance efficiency and performance.  
+ Ltd 
+ 
+based AI Knowledge Assistant, integrating OpenAI GPT -4 and Azure Blob Storage 
+based semantic search and intelligent Q&A.  
+Developed a personalized recommendation engine using historical purchases, repeated offers (similarity score), 
+segmentation . 
+Built champion XGBoost model with custom features and bundled offers using affinity 
+Engineered rolling, demographic, and dynamic segments using PCA and K -Means to drive hyper personalized 
+Engineered rolling, demographic, and dynamic segments using PCA and K -Means to drive hyper personalized 
+end ML lifecycle implementation in an Agile team, collaborating with cross
+participating in sprint planning, demos, and retrospectives.  
+Mentored junior data professionals, contributing to internal knowledge -sharing sessionskishoremoka97@gmail.com  
++91-8897531533 
+and SQL, and 
+, specializing in extracting actionable insights from complex datasets across 
+Regression , Classification , 
+, effectively handling both structured and unstructured data 
+Reinforcement Learning from Human Feedback 
+PCA, t-SNE, DBSCAN, and 
+to enhance accuracy in insurance premium calculators. Additionally, implemented Retrieval-
+contextual  relevance  and response 
+teams to drive innovation 
+in a 25% reduction in 
+omplex business challenges with analytical thinking, leveraging data -driven insights to 
+ April2022– Present 
+4 and Azure Blob Storage 
+Developed a personalized recommendation engine using historical purchases, repeated offers (similarity score), 
+Built champion XGBoost model with custom features and bundled offers using affinity scoring and Shannon 
+to drive hyper personalized 
+to drive hyper personalized 
+end ML lifecycle implementation in an Agile team, collaborating with cross -functional teams and 
+sharing sessions . 
+Technical Skills: 
+ Programming Languages:  Python, SQL 
+ Classic ML Algos: Linear Regression, Logistic Regression, SVM, XGBoost, Decision Trees, K-means Random 
+Forest, PCA, KNN. 
+ Advance ML Algos:  Transformers, NLP. 
+ Data Visulazation: PowerBI, MatplotLib, Seaborn. 
+ Statistical Analysis 
+ Frameworks & Libraries: Pandas, Numpy, Sci-kit learn, Lang chain. 
+ Gen AI,RAG Architecture, Azure Open Ai, Lang chain 
+ 
+Projects: 
+  
+RAG Based AI Knowledge Assistant 
+Tech Stacks: Python, Sentence Transformers , PyMuPDF , OpenAI GPT-4 , VSCode, Git  
+ Developed a Retrieval-Augmented Generation  (RAG) pipeline that intelligently answers user queries 
+using enterprise documents.  
+ Ingested and parsed HTML/PDF files, extracting key metadata  like keywords , intent categories , named 
+entities, and summaries  using LLMs. 
+ Transformed extracted content into vector embeddings  using Sentence  Transformers  and indexed them 
+via FAISS for semantic search. 
+ Integrated Azure OpenAI  / Open Source LLMs with LangChain  to augment user queries with top-
+matching document context before generating answers. 
+ Designed intent-aware pipelines  that filter and retrieve documents based on confidence scores  and 
+intent classification . 
+ Achieved modular design  with clear separation for keyword extraction, summarization, NER, 
+embedding, and retrieval layers. 
+ 
+LLM Specialist – RLHF Trainer (Turing) 
+Tech Stacks: Python, SpaCy, NLTK, AWS, Machine Learning, NLP   
+ Spearheaded the training and fine-tuning of Large Language Models  (LLMs) using Reinforcement 
+Learning with Human Feedback  (RLHF), optimizing model alignment with user expectations and ethical 
+AI standards.  
+ Engineered high-quality, domain-specific training datasets and implemented iterative reward modeling 
+frameworks  to enhance generative accuracy and reduce hallucination rates.  
+ Conducted hyper parameter optimization  and integrated advanced fine-tuning methodologies , 
+ensuring scalable deployment of robust LLM systems.  
+ Collaborated with multidisciplinary teams to benchmark and evaluate model performance using custom 
+achieving measurable improvements in output relevance and coherence. 
+ 
+Recommendation Systems 
+Tech Stacks: Python, AWS, PCA, TSNE, DBSCAN   
+ Developed and optimized recommendation systems using RFM analysis, and XGBoost models to 
+personalize product suggestions as Favorite products.  
+ Developed and optimized an MVP recommendation system using RFM analysis , PCA, t-SNE, and K-
+Means++  clustering to segment customers based on digital activity and purchasing behavior.  
+ Designed and implemented repeated offers  and bundle creation strategies , improving customer 
+engagement  and increasing sales conversion rate.  
+ Built segment-based recommendations leveraging machine learning models ( XGBoost, K-Means, and 
+collaborative filtering ) for targeted product suggestions. 
+ Created behavioral segments  based on digital activity and product purchase behavior segmentation to 
+classify customers effectively. 
+ Developed targeted recommendations for each segment, enhancing user experience and boosting 
+retention rate 
+ 
+Education: 
+ 
+ Bachelor’s Degree in Electrical And Electronics Engineering from Andhra University (2014-2018)

@@ -24,19 +24,19 @@ class PineconeUploader:
         self.pc = Pinecone(api_key=pinecone_api_key)
 
         existing_indexes = self.pc.list_indexes()
-        if self.index_name not in existing_indexes:
-            print(f"Creating Pinecone index: {self.index_name}")
-            self.pc.create_index(
-                name=self.index_name,
-                dimension=self.dimension,
-                metric=self.metric,
-                spec=ServerlessSpec(
-                    cloud=self.cloud,
-                    region=self.region
-                )
-            )
-        else:
-            print(f"Pinecone index '{self.index_name}' already exists.")
+        # if self.index_name not in existing_indexes:
+        #     print(f"Creating Pinecone index: {self.index_name}")
+        #     self.pc.create_index(
+        #         name=self.index_name,
+        #         dimension=self.dimension,
+        #         metric=self.metric,
+        #         spec=ServerlessSpec(
+        #             cloud=self.cloud,
+        #             region=self.region
+        #         )
+        #     )
+        # else:
+        #     print(f"Pinecone index '{self.index_name}' already exists.")
 
         self.index = self.pc.Index(self.index_name)
 
