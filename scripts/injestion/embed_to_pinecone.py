@@ -57,8 +57,11 @@ class PineconeUploader:
                     data = json.load(f)
 
                 doc_id = data.get("filename")
+                if doc_id and doc_id.endswith(".txt"):
+                    doc_id = doc_id[:-4]  # Remove .txt for Pinecone consistency
                 vector = data.get("embedding")
                 if not doc_id or not vector:
+                    print(f"[WARNING] Skipping {jf.name}: missing doc_id or embedding.")
                     continue
 
                 metadata = data.copy()
@@ -69,6 +72,10 @@ class PineconeUploader:
                 if "named_entities" in metadata:
                     named_entities = metadata["named_entities"]
                     metadata["named_entities"] = [ent["text"].strip() for ent in named_entities if "text" in ent]
+
+                # Ensure context is present for downstream search
+                if "context" not in metadata:
+                    metadata["context"] = ""
 
                 vectors.append((doc_id, vector, metadata))
 

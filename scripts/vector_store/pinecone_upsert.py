@@ -34,15 +34,23 @@ class PineconeUpdater:
             return
 
         doc_id = metadata["filename"]
+        if doc_id.endswith(".txt"):
+            doc_id = doc_id[:-4]  # Normalize for Pinecone and search
         embedding = metadata["embedding"]
 
         pinecone_metadata = metadata.copy()
         pinecone_metadata.pop("embedding", None)
         pinecone_metadata.pop("filename", None)
 
+        # Ensure context is present for hybrid/dense search
+        if "context" not in pinecone_metadata:
+            pinecone_metadata["context"] = ""
+
+        # Convert named_entities to list of strings for Pinecone
         if "named_entities" in pinecone_metadata:
             pinecone_metadata["named_entities"] = [
-                ent["text"].strip() for ent in pinecone_metadata["named_entities"] if "text" in ent
+                ent["text"].strip() if isinstance(ent, dict) and "text" in ent else str(ent)
+                for ent in pinecone_metadata["named_entities"]
             ]
 
         print(f"Deleting old vector for document ID: {doc_id}")

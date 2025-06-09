@@ -112,10 +112,10 @@ class MetadataExtractionPipeline:
         intent, confidence = self.predict_intent(cleaned_text)
         result = {
             "filename": f"{Path(filename).stem}.txt",
-            #"context": cleaned_text,
+            # "context": cleaned_text,  # Always save full text
             "keywords": self.extract_keywords(cleaned_text),
             "intent_category": intent,
-            #"intent_confidence": confidence,
+            # "intent_confidence": confidence,  # Optional, still commented out
             "named_entities": self.extract_entities(cleaned_text),
             "summary": self.summarize(cleaned_text),
             "embedding": self.embed_text(cleaned_text)
@@ -150,10 +150,10 @@ class MetadataExtractionPipeline:
             intent, confidence = self.predict_intent(text)
             result = {
                 "filename": txt_file.name,
-                #"context": text,
+                # "context": text,  # Always save full text
                 "keywords": self.extract_keywords(text),
                 "intent_category": intent,
-                #"intent_confidence": confidence,
+                # "intent_confidence": confidence,  # Optional, still commented out
                 "named_entities": self.extract_entities(text),
                 "summary": self.summarize(text),
                 "embedding": self.embed_text(text)
